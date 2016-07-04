@@ -16,16 +16,22 @@
 ### 1.将资源文件导入到drawable目录中
 ![](imags/02/2-2.png)
 
-### 2.
+### 2.在“weather_info”布局文件中增加一个RelativeLayout布局
+之后会在这个布局中依次增加城市图标、城市信息、定位图标、分享图标等。
+![](imags/02/image009.png)
+### 3.接下来依次在上面的RelativeLayout布局中增加以下组件。
+![](imags/02/image010.png)
+![](imags/02/image011.png)
+![](imags/02/image012.png)
+![](imags/02/image013.png)
+![](imags/02/image014.png)
+![](imags/02/image015.png)
+
+### 4.将程序部署到模拟器或真实机器上运行，查看效果如图所示。
+
+![](imags/02/image017.png)
 
 
-### 3.
-
-
-### 4.
-
-
-### 5.
 
 
 
