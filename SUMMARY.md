@@ -3,7 +3,7 @@
 * [教学案例:mini天气预报](README.md)
    * [初始化工程](doc01_md.md)
    * [顶部工具栏制作](doc02_md.md)
-   * [制作今日天气界面](miniWeather/doc03_md.md)
+   * [制作今日天气界面](doc03_md.md)
    * [网络状态检查](miniWeather/doc03_md.md)
    * [获取网络数据](miniWeather/doc04_md.md)
    * [解析网络数据](miniWeather/doc05_md.md)
