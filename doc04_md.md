@@ -4,3 +4,33 @@
 
 因此本次任务是制作一个工具类，用于检查网络状态。
 
+
+## 主要步骤
+
+
+
+### 1.创建一个util包，存放公共的工具类
+
+
+
+### 2.在util文件夹中创建一个NetUtil类
+
+
+### 3.在NetUtil类中实现getNetworkState方法
+
+
+
+### 4.调用检测网络连接状态方法
+
+在连接网络之前，可以直接通过以下语句检测网络是否连接。
+
+     NetUtil.getNetworkState(this) != NetUtil.NETWORN_NONE
+              
+需要增加访问网络状态的权限。
+
+
+
+
+
+
+
