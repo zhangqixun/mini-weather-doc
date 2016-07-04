@@ -18,7 +18,7 @@
 ![](imags/04/4-3.png)
 ### 3.在NetUtil类中实现getNetworkState方法
 
-
+![](imags/04/4-5.png)
 
 ### 4.调用检测网络连接状态方法
 
@@ -38,12 +38,26 @@
         }
 ```
 
-需要增加访问网络状态的权限。
+![](imags/04/4-6.png)
+
+### 5.需要增加访问网络状态的权限
+
+
 
 ![](imags/04/4-4.png)
 
 
-附录：NetUtil.java源码
+### 6.运行结果
+
+
+![](imags/04/4-7.png)
+![](imags/04/4-8.png)
+
+
+
+## 附录：NetUtil.java源码
+
+
 ```
 package cn.edu.pku.zhangqixun.util;
 
