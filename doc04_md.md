@@ -43,6 +43,7 @@
 ![](imags/04/4-4.png)
 
 
+附录：NetUtil.java源码
 ```
 package cn.edu.pku.zhangqixun.util;
 
