@@ -169,6 +169,8 @@ public class MainActivity extends Activity {
 
 ###17.运行程序
 可以再模拟器上运行，也可以在真机下运行。
+
+
 ![](imags/01/2-10.png)
 
 ###18.提交到github
