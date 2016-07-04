@@ -25,7 +25,19 @@
 在连接网络之前，可以直接通过以下语句检测网络是否连接。
 
      NetUtil.getNetworkState(this) != NetUtil.NETWORN_NONE
-              
+
+例如，在Activity中增加以下代码，进行测试。
+```
+ if (NetUtil.getNetworkState(this) != NetUtil.NETWORN_NONE) {
+            Log.d("myWeather", "网络OK");
+            Toast.makeText(MainActivity.this,"网络OK！", Toast.LENGTH_LONG).show();
+        }else
+        {
+            Log.d("myWeather", "网络挂了");
+            Toast.makeText(MainActivity.this,"网络挂了！", Toast.LENGTH_LONG).show();
+        }
+```
+
 需要增加访问网络状态的权限。
 
 ![](imags/04/4-4.png)
