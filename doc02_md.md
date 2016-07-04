@@ -6,11 +6,15 @@
 
 ![](imags/02/1.png)
 
+ 
+## 资源文件
 
+  [下载地址](http://mobile100.zhangqx.com/assets/docs/projects/weather02_res.zip)
+  
 ## 主要步骤
 
-### 1.
-
+### 1.将资源文件导入到
+![](imags/02/2-2.png)
 
 ### 2.
 
