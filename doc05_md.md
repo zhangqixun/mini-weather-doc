@@ -2,12 +2,9 @@
 
 
 ## 主要步骤
-
-
-
 ### 1.为更新按钮添加单击事件
 
-在UI线程中，为ImageView增加单击事件，如下图所示。
+在UI线程中，为更新按钮(ImageView)增加单击事件，如下图所示。
 
 
 ### 2.从SharedPreferences中读取城市的id，拼接URL地址
