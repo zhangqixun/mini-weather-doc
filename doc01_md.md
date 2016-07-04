@@ -4,33 +4,33 @@
 ## 主要步骤
 
 ###1.打开 Android	Studio 开发环境，如下图所示，选择“Start	a	new	Android	Studio	project”。
-![](imags/1-1.png)
+![](images/01/1-1.png)
 
 ###2.在下图界面中，输入“Application	Name”，“Company	Domain”以及“Project	Location”信息。然后单击“Next”按钮。
-![](imags/1-2.png)
+![](images/01/1-2.png)
 
 ###3.在下图的界面中，直接点击“Next”
-![](imags/1-3.png)
+![](images/01/1-3.png)
 ###4.在下图中，选择“Add No Activity”，单击“Finish”。
-![](imags/1-4.png)
+![](images/01/1-4.png)
 ###5.完成项目的创建工作，如下图所示。
-![](imags/1-5.png)
+![](images/01/1-5.png)
 ###6.可以浏览一个新的项目所包含的内容。
-![](imags/1-6.png)
-![](imags/1-7.png)![](imags/1-8.png)
-![](imags/1-15.png)
-![](imags/1-16.png)
+![](images/01/1-6.png)
+![](images/01/1-7.png)![](images/01/1-8.png)
+![](images/01/1-15.png)
+![](images/01/1-16.png)
 
 ###7.注册github账号，在Github创建一个仓库（详细步骤略）
-![](imags/1-10.png)
+![](images/01/1-10.png)
 创建成功后，如下图。
-![](imags/1-11.png)
+![](images/01/1-11.png)
 ###8.安装git客户端（略）
 
 这里只使用命令行来进行git操作。
 
 ###9.进入到minWeather的项目目录下，初始化git项目
-![](imags/1-9.png)
+![](images/01/1-9.png)
 
 ###10.编辑.gitignore文件
 在进行协作开发代码管理的过程中，常常会遇到某些临时文件、配置文件、或者生成文件等，这些文件由于不同的开发端会不一样，如果使用git add . 将所有文件纳入git库中，那么会出现频繁的改动和push，这样会引起开发上的不便。
@@ -90,8 +90,8 @@ captures/
 * git commit -m "first commit" 
 * git remote add origin https://github.com/zhangqixun/mini-weather-zqx.git //git地址请大家自行修改
 * git push -u origin master 
-![](imags/1-12.png)
-![](imags/1-13.png)
+![](images/01/1-12.png)
+![](images/01/1-13.png)
 
 ###12.添加README.md文件
 
@@ -105,14 +105,14 @@ README.md文件内容如下：
 # mini-weather
 ```
 
-![](imags/1-14.png)
+![](images/01/1-14.png)
 
 ###13.新建一个继承Activity的Class
 
-![](imags/2-2.png)
+![](images/01/2-2.png)
 
-![](imags/2-3.png)
-![](imags/2-4.png)
+![](images/01/2-3.png)
+![](images/01/2-4.png)
 
 ```
 public class MainActivity extends Activity {
@@ -125,15 +125,15 @@ public class MainActivity extends Activity {
 
 ```
 ###14.在Layout目录下，新建一个布局文件
-![](imags/2-5.png)
+![](images/01/2-5.png)
 
 新建一个layout目录。接下来新建一个布局文件“weather_info”。
 
-![](imags/2-6.png)
+![](images/01/2-6.png)
 
-![](imags/2-7.png)
+![](images/01/2-7.png)
 
-![](imags/2-8.png)
+![](images/01/2-8.png)
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -164,12 +164,12 @@ public class MainActivity extends Activity {
 ```
 
 ###16.在AndroidManifest文件中注册Activity
-![](imags/2-9.png)
+![](images/01/2-9.png)
 
 
 ###17.运行程序
 可以再模拟器上运行，也可以在真机下运行。
-![](imags/2-10.png)
+![](images/01/2-10.png)
 
 ###18.提交到github
 
