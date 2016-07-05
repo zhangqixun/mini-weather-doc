@@ -124,8 +124,9 @@
     }
 
 ```
-
+调用parseXML，并返回TodayWeather对象。
 ![](imags/07/7-10.png)
+运行结果如下：
 ![](imags/07/7-9.png)
 
 ### 4.利用TodayWeather对象更新UI中的控件
