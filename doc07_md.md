@@ -133,10 +133,33 @@
 
 
 
+编写 updateTodayWeather 函数
+```
+void updateTodayWeather(TodayWeather todayWeather){
+        city_name_Tv.setText(todayWeather.getCity()+"天气");
+        cityTv.setText(todayWeather.getCity());
+        timeTv.setText(todayWeather.getUpdatetime()+ "发布");
+        humidityTv.setText("湿度："+todayWeather.getShidu());
+        pmDataTv.setText(todayWeather.getPm25());
+        pmQualityTv.setText(todayWeather.getQuality());
+        weekTv.setText(todayWeather.getDate());
+        temperatureTv.setText(todayWeather.getHigh()+"~"+todayWeather.getLow());
+        climateTv.setText(todayWeather.getType());
+        windTv.setText("风力:"+todayWeather.getFengli());
+        Toast.makeText(MainActivity.this,"更新成功！",Toast.LENGTH_SHORT).show();
+
+    }
+
+```
+通过消息机制，将解析的天气对象，通过消息发送给主线程，主线程接收到消息数据后，调用updateTodayWeather函数，更新UI界面上的数据。
 
 
+![](imags/07/7-11.png)
+
+![](imags/07/7-12.png)
+
+![](imags/07/7-13.png)
+![](imags/07/7-14.png)
 
 
-
-
-
+备注：兰州城市代码为：101160101
