@@ -8,8 +8,17 @@
 
 
 ###1. 初始化界面控件 
+定义相关的控件对象
+![](imags/07/7-2.png)
 
+初始化控件内容
+![](imags/07/7-3.png)
 
+在onCreate方法中调用initView函数。
+![](imags/07/7-4.png)
+
+程序运行结果如下
+![](imags/07/7-1.png)
 
 ### 2.建立 TodayWeather Bean
 
