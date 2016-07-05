@@ -133,7 +133,7 @@
 
 
 
-编写 updateTodayWeather 函数
+编写 updateTodayWeather 函数。
 ```
 void updateTodayWeather(TodayWeather todayWeather){
         city_name_Tv.setText(todayWeather.getCity()+"天气");
@@ -158,7 +158,10 @@ void updateTodayWeather(TodayWeather todayWeather){
 
 ![](imags/07/7-12.png)
 
+程序运行结果：
 ![](imags/07/7-13.png)
+
+单击更新后，界面如下：
 ![](imags/07/7-14.png)
 
 
