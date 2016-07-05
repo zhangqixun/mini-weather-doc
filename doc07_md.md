@@ -23,9 +23,10 @@
 ### 2.建立 TodayWeather Bean
 
 ![](imags/07/7-5.png)
-
+新建TodayWeather类
 ![](imags/07/7-6.png)
 
+通过工具提供的功能生成get、set、toString方法。
 ![](imags/07/7-7.png)
 ......
 ![](imags/07/7-8.png)
