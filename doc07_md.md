@@ -29,6 +29,9 @@
 ### 3.将解析的数据存入TodayWeather对象中
 
 
+### 4.利用TodayWeather对象更新UI中的控件
+
+
 
 
 
