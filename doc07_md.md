@@ -22,6 +22,14 @@
 
 ### 2.建立 TodayWeather Bean
 
+![](imags/07/7-5.png)
+
+![](imags/07/7-6.png)
+
+![](imags/07/7-7.png)
+......
+![](imags/07/7-8.png)
+
 
 
 
