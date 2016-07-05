@@ -162,4 +162,8 @@ void updateTodayWeather(TodayWeather todayWeather){
 ![](imags/07/7-14.png)
 
 
-备注：兰州城市代码为：101160101
+备注：
+1. 兰州城市代码为：101160101
+2. 关于如何更新ImageView，请大家尝试自行完成，相应的图片资源文件已经提供。
+
+
