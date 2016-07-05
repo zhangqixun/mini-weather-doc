@@ -5,34 +5,32 @@
 ### 1.为更新按钮添加单击事件
 
 在UI线程中，为更新按钮(ImageView)增加单击事件，如下图所示。
-
+![](imags/05/5-2.png)
 
 ### 2.从SharedPreferences中读取城市的id
 
-
-
 通过SharedPreferences读取城市id，如果没有定义则缺省为101010100（北京城市ID）。
+![](imags/05/5-3.png)
 
 
 
 ### 3.使用******获取网络数据
 
+![](imags/05/5-4.png)
 
+![](imags/05/5-5.png)
 
 
 ### 4.在AndroidManifest.xml文件中增加访问INTERNET的权限
 
-
-
-
-
+![](imags/05/5-1.png)
 
 
 ### 6.程序运行结果
 
+![](imags/05/5-6.png)
 
-
-
+![](imags/05/5-7.png)
 
 ## 关键程序代码
 
