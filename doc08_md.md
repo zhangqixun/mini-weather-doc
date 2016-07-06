@@ -7,21 +7,40 @@
 
 ### 1.添加“选择城市”的布局文件
 
+![](imags/08/8-1.png)
 
-
-
+![](imags/08/8-2.png)
 ### 2.添加选择城市Activity
 
-
+![](imags/08/8-3.png)
+![](imags/08/8-4.png)
 
 
 ### 3.为选择城市ImageView添加OnClick事件
 
+![](imags/08/8-4-1.png)
 
+![](imags/08/8-4-2.png)
+
+![](imags/08/8-4-3.png)
+
+运行程序：
+![](imags/08/8-5.png)
+
+![](imags/08/8-6.png)
+
+因为没有在Androidmanifest文件中注册Activity组件。
 
 ### 4.在AndroidManifest.xml文件中注册Activity
 
+![](imags/08/8-7.png)
 
+运行结果如下
+![](imags/08/8-8.png)
+![](imags/08/8-9.png)
+
+![](imags/08/8-10.png)
+![](imags/08/8-11.png)
 
 ### 5.完善选择城市界面布局
 
