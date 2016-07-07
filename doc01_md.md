@@ -1,6 +1,7 @@
 # 初始化工程
 
 
+
 ## 主要步骤
 
 ###1.打开 Android	Studio 开发环境，如下图所示，选择“Start	a	new	Android	Studio	project”。
