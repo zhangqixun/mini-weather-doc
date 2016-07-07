@@ -1,16 +1,11 @@
 # 初始化工程
 ![icon](http://mobile100.zhangqx.com/assets/images/lp2.jpg)
-## 目录
-* [创建工程](#1)
-* [Acticity创建](#Activity创建)
-* [TextView](#TextView)
-* [Button](#Button)
-* [Toast](#Toast)
+
 
 
 
 ## 主要步骤
-<a name="1"></a>
+
 ###1.打开 Android	Studio 开发环境，如下图所示，选择“Start	a	new	Android	Studio	project”。
 ![](imags/01/1-1.png)
 
