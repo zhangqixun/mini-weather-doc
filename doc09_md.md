@@ -12,5 +12,27 @@ city.db城市数据库文件格式如下
 
 ### 1.将数据库文件导入到assets目录
 
+### 2.建立City的Bean
+
+### 3.建立MyApplication类
+
+
+在AndroidManifest.xml文件中注册Application，代码如下图所示：
+
+
+
+### 4.在MyApplication类中创建geiInstance方法
+
+### 5.创建CityDB操作类
+
+### 6.创建初始化数据库的方法
+
+### 7.初始化城市信息列表
+
+### 8.在程序运行时调用数据库访问方法
+
+程序运行结果如下，可以在程序运行时，在Application对象中打开数据库，并取出城市列表信息数据。
+
+
 
 
