@@ -10,7 +10,7 @@
 
 | 序号 | 模块 | 所涉及知识点 |
 | -- | -- | -- |
-| 1 | 创建工程 | 开发工具使用 |
+| 1 | 初始化工程 | android studio<br>git |
 |2|顶部工具栏制作|Activity<br> Layout布局<br>TextView、ImageView、Button等控件|
 | 3 | 制作今日天气界面 | Activity<br> Layout布局<br>TextView、ImageView、Button等控件 |
 | 4 | 网络状态检查 | 2:4 |
