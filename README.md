@@ -13,19 +13,19 @@
 | 1 | 初始化工程 | android studio<br>git |
 |2|顶部工具栏制作|Activity<br> Layout布局<br>TextView、ImageView、Button等控件|
 | 3 | 制作今日天气界面 | Activity<br> Layout布局<br>TextView、ImageView、Button等控件 |
-| 4 | 网络状态检查 | 2:4 |
-| 5 | 获取网络数据 | 2:5 |
-| 6 | 解析JSON数据 | 2:6 |
-| 7 | 更新今日天气数据 | 2:7 |
-| 7 | 制作选择城市界面 | 2:8 |
-| 8 | 从数据库中读取数据 | 2:9 |
-| 9 | 通过ListView展示数据 | 2:10 |
-| 10 | 处理ListView中的Item单击| 2:11 |
-| 11 | 搜索城市 | 2:12 |
-| 12 | 通过Service后台获取数据 | 2:13 |
-| 13 | 制作未来6天天气界面 | 2:14 |
-| 14 | 增加程序引导页面 | 2:15 |
-| 15 | 国际化处理 | 2:16 |
-| 16 | widget桌面插件 | 2:17 |
-| 17 | 测试与优化 | 2:18 |
-| 18 | 应用程序发布 | 2:19 |
+| 4 | 网络状态检查 | NetworkInfo|
+| 5 | 获取网络数据 | SharedPreferences存储<br>多线程<br>通过Http协议获取数据 |
+| 6 | 解析XML数据 | XML文件解析 |
+| 7 | 更新今日天气数据 | 消息机制 |
+| 7 | 制作选择城市界面 | Intent |
+| 8 | 从数据库中读取数据 | Application类 <br> sqlite |
+| 9 | 通过ListView展示数据 | ListView |
+| 10 | 处理ListView中的Item单击| ListView<br>Intent传递数据 |
+| 11 | 搜索城市 | TextWatcher |
+| 12 | 通过Service后台获取数据 | service |
+| 13 | 制作未来6天天气界面 | ViewPager |
+| 14 | 增加程序引导页面 | ViewPager |
+| 15 | 国际化处理 | 国家化 |
+| 16 | widget桌面插件 | widget |
+| 17 | 测试与优化 |  |
+| 18 | 应用程序发布 |  |
