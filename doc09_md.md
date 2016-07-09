@@ -25,6 +25,19 @@ city.db城市数据库文件格式如下
     private String allPY;
     private String allFristPY;
 ```
+增加一个构造函数City
+![](imags/09/9-10.png)
+```
+ public City(String province, String city, String number, String firstPY, String allPY, String allFristPY) {
+        this.province = province;
+        this.city = city;
+        this.number = number;
+        this.firstPY = firstPY;
+        this.allPY = allPY;
+        this.allFristPY = allFristPY;
+    }
+```
+
 ### 3.建立MyApplication类
 ![](imags/09/9-5.png)
 ![](imags/09/9-7.png)
