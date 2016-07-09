@@ -267,10 +267,11 @@ public class MainActivity extends Activity {
 
 
 ### 3、Git其他命令
-* git status 查询repo的状态
-* git branch 列出本地所有分支,当前分支会被星号标示出.
+* git clone url：获取一个url对应的远程Git repo, 创建一个local copy.
+* git status： 查询repo的状态
+* git branch： 列出本地所有分支,当前分支会被星号标示出.
 * git branch (branchname): 创建一个新的分支(当你用这种方式创建分支的时候,分支是基于你的上一次提交建立的). 
-* git checkout (branchname)   切换到一个分支.
+* git checkout (branchname)：切换到一个分支.
 * git remote：列出remote 别名. 
 * git remote rm [别名]: 删除一个存在的remote alias.
 * git remote set-url [别名] [url]:更新远程repo的url. 
