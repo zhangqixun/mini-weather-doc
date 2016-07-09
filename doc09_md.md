@@ -140,6 +140,13 @@ private CityDB openCityDB() {
 在Application类中，打开数据库。
 ![](imags/09/9-13.png)
 
+```
+     private CityDB mCityDB;
+```
+```
+    mCityDB = openCityDB();
+```
+
 ### 7.初始化城市信息列表
 
 ### 8.在程序运行时调用数据库访问方法
