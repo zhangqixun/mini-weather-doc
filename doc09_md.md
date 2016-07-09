@@ -34,9 +34,22 @@ city.db城市数据库文件格式如下
 运行程序结果如下：
 ![](imags/09/9-8.png)
 ### 4.在MyApplication类中创建geiInstance方法
+![](imags/09/9-9.png)
 
+```
+private static MyApplication mApplication;
+```
+```
+mApplication = this;
+```
+```
+    public static MyApplication getInstance(){
+        return  mApplication;
+    }
+```
 
 ### 5.创建CityDB操作类
+
 
 ### 6.创建初始化数据库的方法
 
@@ -45,6 +58,7 @@ city.db城市数据库文件格式如下
 ### 8.在程序运行时调用数据库访问方法
 
 程序运行结果如下，可以在程序运行时，在Application对象中打开数据库，并取出城市列表信息数据。
+
 
 
 
