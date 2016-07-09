@@ -28,9 +28,13 @@
 ![](imags/01/1-10.png)
 创建成功后，如下图。
 ![](imags/01/1-11.png)
-###8.安装git客户端（略）
+###8.安装git客户端（Windows平台）
 
-这里只使用命令行来进行git操作。
+下载git安装包，http://git-scm.com/
+
+在CMD中输入 git 或者 git --version 检查时候安装成功。
+
+
 
 ###9.进入到minWeather的项目目录下，初始化git项目
 ![](imags/01/1-9.png)
@@ -98,15 +102,14 @@ captures/
 
 ###12.添加README.md文件
 
-* touch README.md
-* git add README.md
-* git commit -m'Add README'
-* git push
-
-README.md文件内容如下：
+新建README.md文件。文件中增加一些说明文字的内容，例如：README.md文件内容如下：
 ```
 # mini-weather
 ```
+然后执行以下命令：
+* git add README.md   或 git add .
+* git commit -m “Add README”
+* git push
 
 ![](imags/01/1-14.png)
 
