@@ -80,6 +80,13 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDfEuKfSf+1zHpfPmLES9ldPd2a08JslFF+PkE/uyT8
 
 
 **8.4 将ssh key添加到Github中**
+![](imags/01/1-21.png)
+
+![](imags/01/1-22.png)
+
+![](imags/01/1-23.png)
+
+![](imags/01/1-24.png)
 
 
 ###9.进入到minWeather的项目目录下，初始化git项目
@@ -142,9 +149,18 @@ captures/
 依次输入以下命令
 * git add . 
 * git commit -m "first commit" 
-* git remote add origin https://github.com/zhangqixun/mini-weather-zqx.git //git地址请大家自行修改
+* git remote add origin git@github.com:zhangqixun/mini-weather-zqx.git //git地址请大家自行修改
 * git push -u origin master 
+
+SSH Git地址可通过以下方式获得：
+![](imags/01/1-25.png)
+
+
+![](imags/01/1-26.png)
+
+以下图片remote的URL为https方式，请大家务必使用ssh方式进行push操作。
 ![](imags/01/1-12.png)
+
 ![](imags/01/1-13.png)
 
 ###12.添加README.md文件
