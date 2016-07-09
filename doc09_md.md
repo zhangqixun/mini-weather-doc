@@ -175,7 +175,8 @@ private CityDB openCityDB() {
         for (City city : mCityList) {
             i++;
             String cityName = city.getCity();
-            Log.d(TAG,cityName);
+            String cityCode = city.getNumber();
+            Log.d(TAG,cityCode+":"+cityName);
         }
         Log.d(TAG,"i="+i);
         return true;
