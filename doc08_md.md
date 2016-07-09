@@ -96,7 +96,44 @@
 ![](imags/08/8-15.png)
 
 
-### 8.返回数据时，传递城市代码
+### 8.返回主界面时，传递城市代码数据
+
+修改更新按钮的单击事件处理程序，并编写onActivityResult函数用于接收返回的数据。
+
+![](imags/08/8-21.png)
+
+```
+ startActivityForResult(i,1);
+```
+
+```
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 1 && resultCode == RESULT_OK) {
+            String newCityCode= data.getStringExtra("cityCode");
+            Log.d("myWeather", "选择的城市代码为"+newCityCode);
+
+            if (NetUtil.getNetworkState(this) != NetUtil.NETWORN_NONE) {
+                Log.d("myWeather", "网络OK");
+                queryWeatherCode(newCityCode);
+            } else {
+                Log.d("myWeather", "网络挂了");
+                Toast.makeText(MainActivity.this, "网络挂了！", Toast.LENGTH_LONG).show();
+            }
+
+        }
+    }
+```
+
+在finish之前，传递数据。
+![](imags/08/8-22.png)
+
+```
+Intent i = new Intent();
+                i.putExtra("cityCode", "101160101");
+                setResult(RESULT_OK, i);
+```
+![](imags/08/8-20.png)
+
 
 
 
