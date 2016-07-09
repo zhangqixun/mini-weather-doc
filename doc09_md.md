@@ -144,10 +144,48 @@ private CityDB openCityDB() {
      private CityDB mCityDB;
 ```
 ```
-    mCityDB = openCityDB();
+        mCityDB = openCityDB();
 ```
 
 ### 7.初始化城市信息列表
+![](imags/09/9-14.png)
+```
+    private List<City> mCityList;
+```
+```
+    initCityList();
+```
+```
+    private void initCityList(){
+        mCityList = new ArrayList<City>();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                // TODO Auto-generated method stub
+                prepareCityList();
+            }
+        }).start();
+
+    }
+```
+```
+    private boolean prepareCityList() {
+        mCityList = mCityDB.getAllCity();
+        int i=0;
+        for (City city : mCityList) {
+            i++;
+            String cityName = city.getCity();
+            Log.d(TAG,cityName);
+        }
+        Log.d(TAG,"i="+i);
+        return true;
+    }
+```
+```
+    public List<City> getCityList() {
+        return mCityList;
+    }
+```
 
 ### 8.在程序运行时调用数据库访问方法
 
