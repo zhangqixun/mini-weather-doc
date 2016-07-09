@@ -148,7 +148,7 @@ private CityDB openCityDB() {
 ```
 
 ### 7.初始化城市信息列表
-![](imags/09/9-14.png)
+![](imags/09/9-16.png)
 ```
     private List<City> mCityList;
 ```
@@ -190,8 +190,10 @@ private CityDB openCityDB() {
 
 ### 8.在程序运行时调用数据库访问方法
 
-程序运行结果如下，可以在程序运行时，在Application对象中打开数据库，并取出城市列表信息数据。
+程序运行结果如下
+![](imags/09/9-15.png)
 
+将数据库里读取的数据信息已经存入到mCityList中。
 
 
 
