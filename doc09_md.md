@@ -63,8 +63,79 @@ city.db城市数据库文件格式如下
 
 ### 5.创建CityDB操作类
 
+![](imags/09/9-11.png)
+```
+public class CityDB {
+    public static final String CITY_DB_NAME = "city.db";
+    private static final String CITY_TABLE_NAME = "city";
+    private SQLiteDatabase db;
 
-### 6.创建初始化数据库的方法
+    public CityDB(Context context, String path) {
+        db = context.openOrCreateDatabase(path, Context.MODE_PRIVATE, null);
+    }
+
+    public List<City> getAllCity() {
+        List<City> list = new ArrayList<City>();
+        Cursor c = db.rawQuery("SELECT * from " + CITY_TABLE_NAME, null);
+        while (c.moveToNext()) {
+            String province = c.getString(c.getColumnIndex("province"));
+            String city = c.getString(c.getColumnIndex("city"));
+            String number = c.getString(c.getColumnIndex("number"));
+            String allPY = c.getString(c.getColumnIndex("allpy"));
+            String allFirstPY = c.getString(c.getColumnIndex("allfirstpy"));
+            String firstPY = c.getString(c.getColumnIndex("firstpy"));
+            City item = new City(province, city, number, firstPY, allPY,allFirstPY);
+            list.add(item);
+        }
+        return list;
+    }
+}
+```
+### 6.创建打开数据库的方法
+
+![](imags/09/9-12.png)
+```
+private CityDB openCityDB() {
+        String path = "/data"
+                + Environment.getDataDirectory().getAbsolutePath()
+                + File.separator + getPackageName()
+                + File.separator + "databases1"
+                + File.separator
+                + CityDB.CITY_DB_NAME;
+        File db = new File(path);
+        Log.d(TAG,path);
+        if (!db.exists()) {
+
+            String pathfolder = "/data"
+                    + Environment.getDataDirectory().getAbsolutePath()
+                    + File.separator + getPackageName()
+                    + File.separator + "databases1"
+                    + File.separator;
+            File dirFirstFolder = new File(pathfolder);
+            if(!dirFirstFolder.exists()){
+                dirFirstFolder.mkdirs();
+                Log.i("MyApp","mkdirs");
+            }
+            Log.i("MyApp","db is not exists");
+            try {
+                InputStream is = getAssets().open("city.db");
+                FileOutputStream fos = new FileOutputStream(db);
+                int len = -1;
+                byte[] buffer = new byte[1024];
+                while ((len = is.read(buffer)) != -1) {
+                    fos.write(buffer, 0, len);
+                    fos.flush();
+                }
+                fos.close();
+                is.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+                System.exit(0);
+            }
+        }
+        return new CityDB(this, path);
+    }
+```
 
 ### 7.初始化城市信息列表
 
