@@ -51,6 +51,10 @@ git config --global user.email "100000001@qq.com"
 git config --global push.default simple
 ```
 
+查看git配置可以使用 -l 参数
+
+```git config -l```
+
 ###9.进入到minWeather的项目目录下，初始化git项目
 ![](imags/01/1-9.png)
 
