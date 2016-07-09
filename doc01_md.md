@@ -58,9 +58,27 @@ git config --global push.default simple
 git config -l
 ```
 
-**8.3 生成ssh key**
+**8.3 生成ssh公钥**
+从程序的安装目录中直接打开 "Bash"
+
+![](imags/01/1-18.png)
+
+运行效果如下：
+![](imags/01/1-19.png)
+
+输入命令：
+```
+ssh-keygen
+```
+然后一路回车。既可以在用户目录下的“.ssh”目录下生成一个id_rsa.pub文件。
+![](imags/01/1-20.png)
+
+用记事本打开此文件，将里面的所有内容复制出来。例如，我的机器的公钥信息如下：
+```ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDfSGLEuKfSf+1zHpdPd2a08JslFF+PkE/uyT8Z/l1IKfadBS7c6fjJbJJCtfIsHz9WwL+ZrmqxbL0GTUeVkybFw6uGfqRAUeZW2880si0FuHP4Ff0eZTcDEQKnrNx/zuak1uLYC+JKG8JsafUBe/3QgsAEOsiO79/ZQcmTrgz66ZiKi/ki80y5mc87GevZR/3WSNK0eH4xneRWOtU9Urbc1v/8JkHgjzby548VrZKZWYANoTdP/h3HjmSerpjd0KqJzS97RAOBev6hIELQ9aQn068vuaghIhj3E36Q6JsEcPYXy4/hbzLH4n4l235D9BDDq+ZVf zhangqixun@ZHANGQIXUN4C56
+```
 
 
+**8.4 将ssh key添加到Github中**
 
 ###9.进入到minWeather的项目目录下，初始化git项目
 ![](imags/01/1-9.png)
