@@ -30,11 +30,26 @@
 ![](imags/01/1-11.png)
 ###8.安装git客户端（Windows平台）
 
-下载git安装包，http://git-scm.com/
+下载git安装包：
 
-在CMD中输入 git 或者 git --version 检查时候安装成功。
+官方网站[http://git-scm.com/](http://git-scm.com/)。找到Windows版本的下载页面: [http://git-scm.com/download/win](http://git-scm.com/download/win)
+
+或在国内相关下载中心下载。
 
 
+安装过程中只有以下这个界面选择第二个选项，其他的缺省即可。一路下一步。
+
+![](imags/01/1-07_GitPath.png)
+
+安装完成后，在CMD中输入 git 或者 git --version 检查时候安装成功。
+
+设置本地机器默认commit的昵称与Email. 请使用有意义的名字与email。并配置 push.default
+
+```
+git config --global user.name "zhangsan"
+git config --global user.email "100000001@qq.com"
+git config --global push.default simple
+```
 
 ###9.进入到minWeather的项目目录下，初始化git项目
 ![](imags/01/1-9.png)
