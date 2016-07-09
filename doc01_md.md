@@ -264,6 +264,8 @@ public class MainActivity extends Activity {
 * git commit -m "$$$$$$$" 
 * git push 
 
+### 3、Git其他命令
+
 
 
 
