@@ -10,9 +10,42 @@
 ###1. 初始化界面控件 
 定义相关的控件对象
 ![](imags/07/7-2.png)
+```
+ private TextView cityTv, timeTv, humidityTv, weekTv, pmDataTv, pmQualityTv,
+            temperatureTv, climateTv, windTv, city_name_Tv;
+    private ImageView weatherImg, pmImg;
+```
 
 初始化控件内容
 ![](imags/07/7-3.png)
+
+```
+    void initView(){
+        city_name_Tv = (TextView) findViewById(R.id.title_city_name);
+        cityTv = (TextView) findViewById(R.id.city);
+        timeTv = (TextView) findViewById(R.id.time);
+        humidityTv = (TextView) findViewById(R.id.humidity);
+        weekTv = (TextView) findViewById(R.id.week_today);
+        pmDataTv = (TextView) findViewById(R.id.pm_data);
+        pmQualityTv = (TextView) findViewById(R.id.pm2_5_quality);
+        pmImg = (ImageView) findViewById(R.id.pm2_5_img);
+        temperatureTv = (TextView) findViewById(R.id.temperature);
+        climateTv = (TextView) findViewById(R.id.climate);
+        windTv = (TextView) findViewById(R.id.wind);
+        weatherImg = (ImageView) findViewById(R.id.weather_img);
+
+        city_name_Tv.setText("N/A");
+        cityTv.setText("N/A");
+        timeTv.setText("N/A");
+        humidityTv.setText("N/A");
+        pmDataTv.setText("N/A");
+        pmQualityTv.setText("N/A");
+        weekTv.setText("N/A");
+        temperatureTv.setText("N/A");
+        climateTv.setText("N/A");
+        windTv.setText("N/A");
+    }
+```
 
 在onCreate方法中调用initView函数。
 ![](imags/07/7-4.png)
