@@ -26,13 +26,15 @@ city.db城市数据库文件格式如下
     private String allFristPY;
 ```
 ### 3.建立MyApplication类
-
-
+![](imags/09/9-5.png)
+![](imags/09/9-7.png)
 在AndroidManifest.xml文件中注册Application，代码如下图所示：
+![](imags/09/9-6.png)
 
-
-
+运行程序结果如下：
+![](imags/09/9-8.png)
 ### 4.在MyApplication类中创建geiInstance方法
+
 
 ### 5.创建CityDB操作类
 
