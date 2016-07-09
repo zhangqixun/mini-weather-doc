@@ -12,8 +12,19 @@ city.db城市数据库文件格式如下
 
 ### 1.将数据库文件导入到assets目录
 
+![](imags/09/9-1.png)
+![](imags/09/9-2.png)
 ### 2.建立City的Bean
-
+![](imags/09/9-3.png)
+![](imags/09/9-4.png)
+```
+    private String province;
+    private String city;
+    private String number;
+    private String firstPY;
+    private String allPY;
+    private String allFristPY;
+```
 ### 3.建立MyApplication类
 
 
