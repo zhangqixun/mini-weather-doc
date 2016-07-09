@@ -58,6 +58,20 @@
 ![](imags/07/7-5.png)
 新建TodayWeather类
 ![](imags/07/7-6.png)
+```
+    private String city;
+    private String updatetime;
+    private String wendu;
+    private String shidu;
+    private String pm25;
+    private String quality;
+    private String fengxiang;
+    private String fengli;
+    private String date;
+    private String high;
+    private String low;
+    private String type;
+```
 
 通过工具提供的功能生成get、set、toString方法。
 ![](imags/07/7-7.png)
@@ -159,6 +173,17 @@
 ```
 调用parseXML，并返回TodayWeather对象。
 ![](imags/07/7-10.png)
+
+```
+         TodayWeather todayWeather = null;
+```
+
+```
+                    todayWeather = parseXML(responseStr);
+                    if (todayWeather != null) {
+                         Log.d("myWeather", todayWeather.toString());
+                    }
+```
 运行结果如下：
 ![](imags/07/7-9.png)
 
@@ -189,7 +214,33 @@ void updateTodayWeather(TodayWeather todayWeather){
 
 ![](imags/07/7-11.png)
 
+```
+private static final int UPDATE_TODAY_WEATHER = 1;
+```
+
+```
+    private Handler mHandler = new Handler() {
+        public void handleMessage(android.os.Message msg) {
+            switch (msg.what) {
+                case UPDATE_TODAY_WEATHER:
+                    updateTodayWeather((TodayWeather) msg.obj);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+    };
+```
+
 ![](imags/07/7-12.png)
+
+```
+                        Message msg =new Message();
+                        msg.what = UPDATE_TODAY_WEATHER;
+                        msg.obj=todayWeather;
+                        mHandler.sendMessage(msg);
+```
 
 程序运行结果：
 ![](imags/07/7-13.png)
