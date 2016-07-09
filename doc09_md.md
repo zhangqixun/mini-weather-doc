@@ -37,10 +37,10 @@ city.db城市数据库文件格式如下
 ![](imags/09/9-9.png)
 
 ```
-private static MyApplication mApplication;
+    private static MyApplication mApplication;
 ```
 ```
-mApplication = this;
+        mApplication = this;
 ```
 ```
     public static MyApplication getInstance(){
