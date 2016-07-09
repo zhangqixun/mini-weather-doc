@@ -276,6 +276,7 @@ public class MainActivity extends Activity {
 * git remote rm [别名]: 删除一个存在的remote alias.
 * git remote set-url [别名] [url]:更新远程repo的url. 
 * git config -l：查看git config的信息
+* git push -f：强推，即利用强覆盖方式用你本地的代码替代git仓库内的内容
 
 
 
